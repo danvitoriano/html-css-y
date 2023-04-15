@@ -43,7 +43,8 @@ ul{
     background-color: red;
     padding: 20px;
     color: yellow;
-    width: 110px;
+    width: 610px;
+    max-width: 50%;
     height: 20px;
     position: absolute;
     /* left: calc(50% - 100px); */
@@ -61,5 +62,44 @@ ul{
     font-weight: bold;
     font-style: italic;
     text-transform: capitalize;
-    text-shadow: 1px 1px 20px red;
+    text-shadow: 1px 1px 2px yellow;
+}
+.teste-model{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    color: black;
+    overflow: scroll;
+    /* left: 200px; */
+    position: relative;
+    border: 5px solid orange;
+    padding: 10px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 12px black;
+    border-radius: 10px;
+}
+.posicao{
+    width: 10vw;
+    height: 50px;
+    background-color: green;
+    color: white;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+}
+@media(max-width:480px){
+    #img-responsive{
+        max-width: 100%;
+        width: 20px;
+    }
+}
+@media(min-width:481px) and (max-width:768px){
+    #img-responsive{
+        max-width: 50%;
+    }
+}
+
+#img-responsive{
+    width: 1200px;
 }
